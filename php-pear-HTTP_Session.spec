@@ -6,7 +6,7 @@
 Summary:	%{_pearname} - Object-oriented interface to the session_* family functions
 Summary(pl):	%{_pearname} - Obiektowy interfejs do funkcji z rodziny session_*
 Name:		php-pear-%{_pearname}
-Version:	0.2
+Version:	0.3
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
