@@ -18,7 +18,7 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Object-oriented interface to the session_* family functions it
+Object-oriented interface to the session_* family functions; it
 provides extra features such as database storage for session data
 using DB package. It introduces new methods like isNewSession(),
 setCookieless(), abandon(), setExpire(), setIdle(), isExpired(),
@@ -27,6 +27,11 @@ isIdled() and others.
 This class has in PEAR status: %{_status}.
 
 %description -l pl
+Ten pakiet jest obiektowo zorientowanym interfejsem do funkcji z
+rodziny session_*. Dostarcza dodatkowe mo¿liwo¶ci, takie jak
+sk³adowanie danych sesji w bazie danych przy u¿yciu pakietu DB.
+Wprowadza nowe metody, takie jak isNewSession(), setCookieless(),
+abandon(), setExpire(), setIdle(), isExpired(), isIdled() i inne.
 
 Ta klasa ma w PEAR status: %{_status}.
 
