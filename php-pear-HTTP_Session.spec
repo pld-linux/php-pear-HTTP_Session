@@ -10,6 +10,7 @@ Version:	0.3
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
+# Source0-md5:	5fbabb1863a354f43e4112a90c9b5192
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://opensource.visionp.de/modules/project/HTTP_Header.php
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
