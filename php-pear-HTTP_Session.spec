@@ -3,15 +3,16 @@
 %define		_subclass	Session
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
+
 Summary:	%{_pearname} - Object-oriented interface to the session_* family functions
 Summary(pl):	%{_pearname} - Obiektowy interfejs do funkcji z rodziny session_*
 Name:		php-pear-%{_pearname}
-Version:	0.4
-Release:	2
+Version:	0.5.1
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-# Source0-md5:	aeb0a0cc805d7755d2086e067adf1761
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	c97b39e3f2b8cd76f80ab94650573aaf
 URL:		http://pear.php.net/package/HTTP_Session/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
