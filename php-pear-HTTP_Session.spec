@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - Object-oriented interface to the session_* family functions
-Summary(pl):	%{_pearname} - Obiektowy interfejs do funkcji z rodziny session_*
+Summary(pl.UTF-8):   %{_pearname} - Obiektowy interfejs do funkcji z rodziny session_*
 Name:		php-pear-%{_pearname}
 Version:	0.5.5
 Release:	1
@@ -35,10 +35,10 @@ isIdled() and others.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
+%description -l pl.UTF-8
 Ten pakiet jest obiektowo zorientowanym interfejsem do funkcji z
-rodziny session_*. Dostarcza dodatkowe moøliwo∂ci, takie jak
-sk≥adowanie danych sesji w bazie danych przy uøyciu pakietu DB.
+rodziny session_*. Dostarcza dodatkowe mo≈ºliwo≈õci, takie jak
+sk≈Çadowanie danych sesji w bazie danych przy u≈ºyciu pakietu DB.
 Wprowadza nowe metody, takie jak isNewSession(), setCookieless(),
 abandon(), setExpire(), setIdle(), isExpired(), isIdled() i inne.
 
