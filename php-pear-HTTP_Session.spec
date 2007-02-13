@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - Object-oriented interface to the session_* family functions
-Summary(pl.UTF-8):   %{_pearname} - Obiektowy interfejs do funkcji z rodziny session_*
+Summary(pl.UTF-8):	%{_pearname} - Obiektowy interfejs do funkcji z rodziny session_*
 Name:		php-pear-%{_pearname}
 Version:	0.5.5
 Release:	1
