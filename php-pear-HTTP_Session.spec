@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - Object-oriented interface to the session_* family functions
 Summary(pl.UTF-8):	%{_pearname} - Obiektowy interfejs do funkcji z rodziny session_*
 Name:		php-pear-%{_pearname}
-Version:	0.5.5
+Version:	0.5.6
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	2ebf2cf69bbb98883738063c624d0adb
+# Source0-md5:	96a45274b2164f13c3b73e274453787d
 URL:		http://pear.php.net/package/HTTP_Session/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -44,6 +44,20 @@ abandon(), setExpire(), setIdle(), isExpired(), isIdled() i inne.
 
 Ta klasa ma w PEAR status: %{_status}.
 
+%package tests
+Summary:	Tests for PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
+Group:		Development/Languages/PHP
+Requires:	%{name} = %{version}-%{release}
+AutoReq:	no
+AutoProv:	no
+
+%description tests
+Tests for PEAR::%{_pearname}.
+
+%description tests -l pl.UTF-8
+Testy dla PEAR::%{_pearname}.
+
 %prep
 %pear_package_setup
 
@@ -70,3 +84,7 @@ fi
 %{php_pear_dir}/%{_class}/*.php
 %{php_pear_dir}/%{_class}/%{_subclass}/*.php
 %{php_pear_dir}/%{_class}/%{_subclass}/Container/*.php
+
+%files tests
+%defattr(644,root,root,755)
+%{php_pear_dir}/tests/*
