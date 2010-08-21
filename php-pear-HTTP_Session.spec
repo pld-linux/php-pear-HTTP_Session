@@ -3,12 +3,11 @@
 %define		_subclass	Session
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
-
 Summary:	%{_pearname} - Object-oriented interface to the session_* family functions
 Summary(pl.UTF-8):	%{_pearname} - Obiektowy interfejs do funkcji z rodziny session_*
 Name:		php-pear-%{_pearname}
 Version:	0.5.6
-Release:	2
+Release:	3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -20,6 +19,9 @@ BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-common >= 3:4.2.0
 Requires:	php-pear
 Requires:	php-pear-PEAR-core >= 1:1.3.3
+Suggests:	php-pear-DB
+Suggests:	php-pear-MDB
+Suggests:	php-pear-MDB2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -49,8 +51,8 @@ Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{version}-%{release}
-AutoReq:	no
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
