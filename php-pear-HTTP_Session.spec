@@ -1,13 +1,11 @@
-%include	/usr/lib/rpm/macros.php
-%define		_class		HTTP
-%define		_subclass	Session
 %define		_status		beta
-%define		_pearname	%{_class}_%{_subclass}
+%define		_pearname	HTTP_Session
+%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - Object-oriented interface to the session_* family functions
 Summary(pl.UTF-8):	%{_pearname} - Obiektowy interfejs do funkcji z rodziny session_*
 Name:		php-pear-%{_pearname}
 Version:	0.5.6
-Release:	4
+Release:	5
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -16,7 +14,7 @@ URL:		http://pear.php.net/package/HTTP_Session/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php-common >= 3:4.2.0
+Requires:	php(core) >= 4.2.0
 Requires:	php-pear
 Requires:	php-pear-PEAR-core >= 1:1.3.3
 Suggests:	php-pear-DB
@@ -68,8 +66,8 @@ fi
 %doc install.log optional-packages.txt
 %doc docs/%{_pearname}/docs/*
 %{php_pear_dir}/.registry/*.reg
-%dir %{php_pear_dir}/%{_class}/%{_subclass}
-%dir %{php_pear_dir}/%{_class}/%{_subclass}/Container
-%{php_pear_dir}/%{_class}/*.php
-%{php_pear_dir}/%{_class}/%{_subclass}/*.php
-%{php_pear_dir}/%{_class}/%{_subclass}/Container/*.php
+%dir %{php_pear_dir}/HTTP/Session
+%dir %{php_pear_dir}/HTTP/Session/Container
+%{php_pear_dir}/HTTP/*.php
+%{php_pear_dir}/HTTP/Session/*.php
+%{php_pear_dir}/HTTP/Session/Container/*.php
