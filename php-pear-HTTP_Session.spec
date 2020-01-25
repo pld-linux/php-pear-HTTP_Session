@@ -1,6 +1,5 @@
 %define		_status		beta
 %define		_pearname	HTTP_Session
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - Object-oriented interface to the session_* family functions
 Summary(pl.UTF-8):	%{_pearname} - Obiektowy interfejs do funkcji z rodziny session_*
 Name:		php-pear-%{_pearname}
